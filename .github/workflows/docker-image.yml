@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        fetch-depth: 0  #for better analysis
+        fetch-depth: 0  
 
     - name: Build Docker image
       run: docker build -t my-node-app:${{ github.sha }} .
